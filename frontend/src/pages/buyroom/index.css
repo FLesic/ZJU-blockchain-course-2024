@@ -1,0 +1,41 @@
+.container {
+    width: 500px;
+    height: 600px;
+
+    background: #F2F3F4;
+}
+
+.main {
+    padding: 10px;
+}
+.houses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px; /* 卡片之间的间距 */
+    justify-content: center; /* 水平居中 */
+}
+
+.house-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 16px;
+    word-wrap: break-word; /* 在长单词或URL时进行换行 */
+    box-sizing: border-box; /* 边框和内边距包含在宽度内 */
+}
+.operation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.buttons {
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
